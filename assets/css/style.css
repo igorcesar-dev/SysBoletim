@@ -16,44 +16,76 @@ h3 {
     margin-left: 6rem;
 }
 
+.menu-nav {
+    width: 100%;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(36, 39, 39);
+    position: absolute;
+}
+
 .container {
     width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .box-center {
-    background-color: red;
-    width: 80rem;
-    height: 50rem;
+    width: 100%;
     justify-content: center;
     align-items: center;
-    border: solid 1px;
     border-radius: 1rem;
 }
 
 .box-container {
     display: grid;
     grid-template-columns: 1fr 2.5fr;
-}
-
-.menu-nav {
-    padding: 0.5rem;
-    display: flex;
-    justify-content: space-between;
-    background-color: rgb(36, 39, 39);
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
+    height: 100vh
 }
 
 .box-left {
-    display: block;
-    width: 400px;
-    height: 708px;
-    background-color: #5075f0;
-    border: solid 1px;
-    border-bottom-left-radius: 1rem;
+    background-color: #757575;
+    border-top: solid 3px;
+    border-right: solid 3px;
 }
 
+.box-left-space {
+    margin-top: 8rem;
+}
+
+.box-right {
+    display: block;
+    background-color: #757575;
+    border-top: solid 3px;
+}
+
+.box-right-head {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 1rem;
+    margin-top: 8rem;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.phone-student {
+    margin-top: 1rem;
+}
+
+.box-right-contents {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.border {
+    border: solid 1px;
+    padding: 0.5rem;
+    color: #000;
+}

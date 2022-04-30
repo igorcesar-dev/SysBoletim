@@ -8,3 +8,9 @@ const alunos = [{
     matricula: 1619068,
     curso: "Designer Gráfico",
 }];
+
+const avaliacoes = [{
+    matricula: 1619067,
+    modulo: "Introdução à Informática",
+    data: "10/05/2022",
+}];
