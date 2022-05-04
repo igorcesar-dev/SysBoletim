@@ -1,8 +1,17 @@
 const alunos = [{
     nome: "Igor César da Silva",
-    matricula: 1619067,
+    matricula: 1,
+    senha: "1",
     telefone: 991711242,
     curso: "Operador de Computador",
+},
+{
+    nome: "Ilana Bruna Lima Pereira",
+    matricula: 1619068,
+    senha: "Prepara_12",
+    telefone: 9919994944,
+    curso: "Designer Gráfico"
+
 }];
 
 
