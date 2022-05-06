@@ -10,27 +10,41 @@ const alunos = [{
     matricula: 1619068,
     senha: "Prepara_12",
     telefone: 9919994944,
-    curso: "Designer Gráfico"
-
+    curso: "Designer Gráfico",
 }];
 
 
-function exibirAluno(){
+function alunoLogado(valor) {
+    if (valor.matricula == campo.value) {
+        alert("é igual")
+    };
+};
+
+var filtraAluno = alunos.filter(alunoLogado);
+filtraAluno.forEach(aluno => {
+    console.log(aluno);
+});
+alunoLogado();
+
+
+function exibirAluno() {
     var containerAluno = document.getElementById('aluno');
     alunos.map((value) => {
-        containerAluno.innerHTML +=  `
+        if(value == campo.value){
+
+        containerAluno.innerHTML += `
         <div class="box-right-head">
-            <p class="name-student">Nome: `+value.nome+`</p>
-            <p class="code-student">Matrícula: `+value.matricula+`</p>
-            <p class="phone-student">Telefone: `+value.telefone+`</p>
+            <p class="name-student">Nome: `+ value.nome + `</p>
+            <p class="code-student">Matrícula: `+ value.matricula + `</p>
+            <p class="phone-student">Telefone: `+ value.telefone + `</p>
         </div>
-        `
+        `}
     })
 }
 exibirAluno();
 
 
-function exibirAvaliação(){
+function exibirAvaliação() {
     var containerAvaliacao = document.getElementById('avaliacao');
     alunos.map((value) => {
         containerAvaliacao.innerHTML += `

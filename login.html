@@ -9,8 +9,6 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/login.css">
-    <script src="assets/js/alunos.js"></script>
-    <script src="assets/js/login.js"></script>
 </head>
 
 <body>
@@ -19,22 +17,29 @@
         <div class="box-form">
             <div class="form-title">
                 <p>Faça o login em sua conta</p>
-                <div class="label-email">
-                    <label>Usuário</label>
-                    <input id="usuario" type="text">
-                </div>
 
-                <div class="label-pass">
-                    <label for="pass" class="text">Senha</label>
-                    <input id="senha" type="password" class="pass">
-                </div>
-                <div class="button-form">
-                    <button onclick="logar()" role="button">ACESSAR</button>
-                </div>
+                <form id="formulario">
+                    <div class="label-email">
+                        <label>Usuário</label>
+                        <input id="usuario" type="text">
+                    </div>
+                    <div class="label-pass">
+                        <label for="pass" class="text">Senha</label>
+                        <input id="senha" type="password" class="pass">
+                    </div>
+
+                    <div class="button-form">
+                        <button type="submit" class="button-login" onclick="logar()" role="button">ACESSAR</button>
+                    </div>
+                </form>
+
             </div>
         </div>
     </div>
     </div>
+
+    <script src="assets/js/alunos.js"></script>
+    <script src="assets/js/login.js"></script>
 </body>
 
 </html>
